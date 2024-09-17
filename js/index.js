@@ -22,3 +22,11 @@ const allClassElements = document.getElementsByClassName("info");
 
 const myParagraph = document.querySelectorAll(".info");
 
+
+/**
+ * Nodes VS Element in DOM
+ */
+
+const secondContainer = document.querySelector(container2);
+console.log(container2.children);
+
