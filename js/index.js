@@ -88,3 +88,31 @@ console.log(nextElementSibling);
 
 const nextSibling = item2.nextSibling;
 console.log(nextSibling);
+
+
+/**
+ * innerText, textContent and innerHTML
+ */
+
+const container4 = document.querySelector("container");
+
+console.log(container4.innerText);
+console.log(container4.textContent);
+console.log(container4.innerHTML);
+
+
+/**
+ * setAttribute, getAttribute and removeAttribute
+ */
+
+const myButton = document.getElementById("my-button");
+myButton.setAttribute("class", "btn btn-primary common-class");
+myButton.setAttribute("disabled", true);
+
+myButton.removeAttribute("disabled");
+
+const myLink = document.getElementById("my-link");
+const link = myLink.getAttribute("href");
+console.log(link);
+console.log(myLink.getAttribute("title"));
+

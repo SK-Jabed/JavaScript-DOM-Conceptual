@@ -4,6 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Play With DOM</title>
+  <style>
+    #content {
+      display: none;
+    }
+    .common-class {
+      background-color: tomato;    
+    }
+  </style>
 </head>
 <body>
   <h1 id="header">We Are Gonna Play With DOM Tonight</h1>
@@ -36,6 +44,14 @@
     <li id="item1">Item - 1</li>
     <li id="item2">Item - 2</li>
     <li id="item3">Item - 3</li>
+  </div>
+  <div class="container4">
+    <p>Hello <span>World</span></p>
+    <p id="content">This is hidden text</p>
+  </div>
+  <div>
+    <button id="my-button">Click Me</button>
+    <a href="https://www.youtube.com/" id="my-link" target="_blank" title="Go to example">Youtube</a>
   </div>
   <script src="./js/index.js"></script>
 </body>
