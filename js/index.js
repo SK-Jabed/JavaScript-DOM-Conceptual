@@ -66,5 +66,25 @@ for (heading of myHeadings) {
  */
 const secondContainer = document.querySelector(container2);
 
-console.log(container2.childNodes);
-console.log(container2.children);
+// console.log(container2.childNodes);
+// console.log(container2.children);
+
+
+/**
+ * 1. parentElement
+ * 2. children
+ * 3. nextElementSibling vs nextSibling
+ * 4. previousElementSibling
+ */
+const item2 = document.getElementById("item2");
+const parent = item2.parentElement;
+console.log(parent);
+
+const previous = item2.previousElementSibling;
+console.log(previous);
+
+const nextElementSibling = item2.nextElementSibling;
+console.log(nextElementSibling);
+
+const nextSibling = item2.nextSibling;
+console.log(nextSibling);
