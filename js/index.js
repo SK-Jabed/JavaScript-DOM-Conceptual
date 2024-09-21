@@ -116,3 +116,29 @@ const link = myLink.getAttribute("href");
 console.log(link);
 console.log(myLink.getAttribute("title"));
 
+/**
+ * Creating an element and append 
+ * Add class name 
+ * classList[add(), remove()]
+ * appendChild vs append 
+ * remove or remove child
+ */
+const container5 = document.querySelector(".container5");
+const p = document.createElement("p");
+p.innerText = "I am created by JS dynamically";
+
+container5.appendChild(p);
+console.log(p);
+
+const h1 = document.createElement("h1");
+h1.textContent = "I am h1 , and i can inject to html through js";
+
+// h1.classList.add("common-class");
+h1.className = "common-class";
+h1.classList.remove("common-class");
+// container5.appendChild(h1);
+
+// remove and remove child
+// container5.remove();
+container5.removeChild(h1);
+container5.removeChild(p);
