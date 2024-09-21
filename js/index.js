@@ -53,7 +53,7 @@ const myHeadings = document.querySelectorAll(".my-heading");
 for (heading of myHeadings) {
     const info = heading;
     info.style.color = "white"
-    info.style.backgroundColor = "darkviolet"
+    info.style.backgroundColor = "darkViolet"
     info.style.border = "2px solid tomato";
     info.style.textAlign = "center";
     info.style.fontFamily = "Arial";
